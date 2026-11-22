@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Primary Meta Tags -->
   <meta name="title" content="FSDAM: Few-Shot Driving Attention Modeling via Vision-Language Coupling">
   <meta name="description" content="FSDAM is a few-shot framework for joint driver gaze prediction and structured attention reasoning using only 90 annotated examples, with strong zero-shot generalization across driving benchmarks.">
   <meta name="keywords" content="driver attention, gaze prediction, explainable AI, autonomous driving, few-shot learning, vision-language learning, interpretable AI, saliency prediction, human-AI collaboration">
@@ -12,7 +12,6 @@
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="FSDAM Project Page">
   <meta property="og:title" content="FSDAM: Few-Shot Driving Attention Modeling via Vision-Language Coupling">
@@ -28,14 +27,12 @@
   <meta property="article:tag" content="driver attention">
   <meta property="article:tag" content="autonomous driving">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FSDAM: Few-Shot Driving Attention Modeling via Vision-Language Coupling">
   <meta name="twitter:description" content="Few-shot driver attention modeling with joint gaze prediction and structured reasoning.">
   <meta name="twitter:image" content="https://fsdam-vlc.github.io/fsdam/static/images/social_preview.png">
   <meta name="twitter:image:alt" content="FSDAM project preview">
 
-  <!-- Academic Meta -->
   <meta name="citation_title" content="FSDAM: Few-Shot Driving Attention Modeling via Vision-Language Coupling">
   <meta name="citation_author" content="Hamid, Kaiser">
   <meta name="citation_author" content="Cui, Can">
@@ -44,10 +41,9 @@
   <meta name="citation_author" content="Liang, Nade">
   <meta name="citation_publication_date" content="2025">
   <meta name="citation_conference_title" content="arXiv preprint">
-  <meta name="citation_pdf_url" content="https://fsdam-vlc.github.io/fsdam/static/pdfs/fsdam.pdf">
 
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="theme-color" content="rgb(37, 99, 235)">
+  <meta name="msapplication-TileColor" content="rgb(37, 99, 235)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
@@ -80,7 +76,6 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/index.js"></script>
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -138,6 +133,29 @@
     }
   }
   </script>
+
+  <style>
+    .fsdam-gradient {
+      display: inline-block;
+      background: linear-gradient(
+        110deg,
+        rgb(6, 182, 212) 0%,
+        rgb(37, 99, 235) 35%,
+        rgb(124, 58, 237) 65%,
+        rgb(245, 158, 11) 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    .publication-title {
+      line-height: 1.2;
+    }
+  </style>
 </head>
 
 <body>
@@ -151,11 +169,12 @@
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
+
               <h1 class="title is-1 publication-title">
-                FSDAM: Few-Shot Driving Attention Modeling via Vision-Language Coupling
+                <span class="fsdam-gradient">FSDAM</span>: Few-Shot Driving Attention Modeling via Vision-Language Coupling
               </h1>
 
-              <p style="color:#dc2626; font-size:1.5rem; font-weight:700; margin-top:0.75rem; margin-bottom:1rem;">
+              <p style="color:rgb(220, 38, 38); font-size:1.5rem; font-weight:700; margin-top:0.75rem; margin-bottom:1rem;">
                 Accepted to WACV 2027 🎉
               </p>
 
@@ -177,24 +196,6 @@
 
               <div class="column has-text-centered">
                 <div class="publication-links">
-                  <span class="link-block">
-                    <a href="static/pdfs/fsdam.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Paper</span>
-                    </a>
-                  </span>
-
-                  <span class="link-block">
-                    <a href="static/pdfs/fsdam_supplementary.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <span class="link-block">
                     <a href="https://github.com/fsdam-vlc/fsdam" target="_blank" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -221,7 +222,6 @@
       </div>
     </section>
 
-    <!-- Teaser -->
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
@@ -233,7 +233,6 @@
       </div>
     </section>
 
-    <!-- Abstract -->
     <section class="section hero is-light">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -249,7 +248,6 @@
       </div>
     </section>
 
-    <!-- Key Contributions -->
     <section class="section">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -269,108 +267,100 @@
       </div>
     </section>
 
-<!-- Method -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <h2 class="title is-3">Method Overview</h2>
-        <img src="static/images/architecture.png" alt="FSDAM architecture" loading="lazy">
-        <div class="content has-text-justified mt-4">
-          <p>
-            FSDAM separates spatial attention prediction and language-based reasoning into two cooperative pathways. A training-only vision-language alignment module injects semantic priors into the spatial branch, while the reasoning branch produces structured attention explanations grounded in scene context and anticipated focus transitions.
-          </p>
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h2 class="title is-3">Method Overview</h2>
+            <img src="static/images/architecture.png" alt="FSDAM architecture" loading="lazy">
+            <div class="content has-text-justified mt-4">
+              <p>
+                FSDAM separates spatial attention prediction and language-based reasoning into two cooperative pathways. A training-only vision-language alignment module injects semantic priors into the spatial branch, while the reasoning branch produces structured attention explanations grounded in scene context and anticipated focus transitions.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
 
-<!-- Video Demo -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Video Demo</h2>
 
-      <h2 class="title is-3 has-text-centered">Video Demo</h2>
-
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-
-          <div class="publication-video">
-            <iframe
-              width="100%"
-              height="480"
-              src="https://www.youtube.com/embed/KCpqhram0K8"
-              title="FSDAM Video Demo"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-video">
+                <iframe
+                  width="100%"
+                  height="480"
+                  src="https://www.youtube.com/embed/KCpqhram0K8"
+                  title="FSDAM Video Demo"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
           </div>
 
+          <p class="subtitle has-text-centered">
+            Demo visualization of FSDAM predictions on driving video, showing attention maps and generated structured captions.
+          </p>
+
         </div>
       </div>
+    </section>
 
-      <p class="subtitle has-text-centered">
-        Demo visualization of FSDAM predictions on driving video, showing attention maps and generated structured captions.
-      </p>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
 
-    </div>
-  </div>
-</section>
+          <div id="results-carousel" class="carousel results-carousel">
 
-    <!-- Results Carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+            <div class="item has-text-centered">
+              <img
+                src="static/images/bdda_prediction.png"
+                alt="BDDA qualitative prediction"
+                loading="lazy"
+                style="max-width:850px; width:100%; height:auto; margin:auto; display:block;"
+              >
+              <p class="subtitle has-text-centered">
+                Qualitative gaze prediction and reasoning examples on BDDA.
+              </p>
+            </div>
 
-      <div id="results-carousel" class="carousel results-carousel">
+            <div class="item has-text-centered">
+              <img
+                src="static/images/w3d_prediction.png"
+                alt="W3D qualitative prediction"
+                loading="lazy"
+                style="max-width:850px; width:100%; height:auto; margin:auto; display:block;"
+              >
+              <p class="subtitle has-text-centered">
+                Zero-shot transfer examples on W³DA-style evaluation.
+              </p>
+            </div>
 
-        <div class="item has-text-centered">
-          <img
-            src="static/images/bdda_prediction.png"
-            alt="BDDA qualitative prediction"
-            loading="lazy"
-            style="max-width:850px; width:100%; height:auto; margin:auto; display:block;"
-          >
-          <p class="subtitle has-text-centered">
-            Qualitative gaze prediction and reasoning examples on BDDA.
-          </p>
+            <div class="item has-text-centered">
+              <img
+                src="static/images/attention.png"
+                alt="Attention reasoning examples"
+                loading="lazy"
+                style="max-width:850px; width:100%; height:auto; margin:auto; display:block;"
+              >
+              <p class="subtitle has-text-centered">
+                Qualitative comparison of driver attention prediction on BDD-A.
+              </p>
+            </div>
+
+          </div>
         </div>
-
-        <div class="item has-text-centered">
-          <img
-            src="static/images/w3d_prediction.png"
-            alt="W3D qualitative prediction"
-            loading="lazy"
-            style="max-width:850px; width:100%; height:auto; margin:auto; display:block;"
-          >
-          <p class="subtitle has-text-centered">
-            Zero-shot transfer examples on W³DA-style evaluation.
-          </p>
-        </div>
-
-        <div class="item has-text-centered">
-          <img
-            src="static/images/attention.png"
-            alt="Attention reasoning examples"
-            loading="lazy"
-            style="max-width:850px; width:100%; height:auto; margin:auto; display:block;"
-          >
-          <p class="subtitle has-text-centered">
-            Qualitative comparison of driver attention prediction on BDD-A.
-          </p>
-        </div>
-
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-    <!-- BibTeX -->
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <div class="bibtex-header" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
@@ -389,6 +379,7 @@
   primaryClass={cs.CV},
   url={https://arxiv.org/abs/2511.12708}
 }</code></pre>
+      </div>
     </section>
 
     <footer class="footer">
